@@ -99,9 +99,9 @@ if st.button("Analyze Sentiment"):
         prediction = model.predict(processed_features)[0]
 
         sentiment_map = {
-            0: "Negative",
-            1: "Neutral",
-            2: "Positive"
+            0: "Bearish",
+            1: "Bullish",
+            2: "Neutral"
         }
         predicted_sentiment = sentiment_map[prediction]
 
